@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "My-font";
+  src: url("./digital-7.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #0e0e0e;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    width: 250px;
+    height: 100px;
+    background-color: #303030;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .reloj {
+      border-radius: 10px;
+      width: 97%;
+      height: 90%;
+      background-color: #1d1c1c;
+
+      .number {
+        color: red;
+        font-family: "My-font";
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .buttons {
+      padding: 10px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      .Seguir,
+      .iniciar {
+        cursor: pointer;
+        background: linear-gradient(to top left, #861212, #c30f0f);
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 4px;
+        color: #fff;
+      }
+    }
+  }
+}
